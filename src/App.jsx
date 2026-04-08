@@ -1,5 +1,12 @@
 import data from "./data.json"
+import { Bio } from "./bioComponents/Bio"
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>
+  return (
+    <div>
+
+      <Bio />
+
+    </div>
+  )
 }

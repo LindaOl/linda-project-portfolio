@@ -1,0 +1,80 @@
+/*Bio*/
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 32px;
+    width: 100%;
+    padding: 40px 20px 15px 20px;
+}
+
+
+.bio-information-container {
+    width: 100%;
+}
+
+
+.bio-image-container {
+    width: 100%;
+}
+
+
+.profile-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+.profile-picture {
+    width: 100%;
+    display: block;
+}
+
+/*Social Links*/
+.social-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 32px;
+    height: 64px;
+    align-items: end;
+
+}
+
+.social-links img {
+    width: 21px;
+    aspect-ratio: 1 / 1;
+}
+
+
+
+/*Media query for tablet, 668px - 1023px*/
+@media screen and (min-width: 668px) and (max-width: 1023px) and (orientation: landscape) {}
+
+
+/*Media query for desktop, 1024px and larger*/
+@media screen and (min-width: 1024px) {
+
+    /*Bio*/
+    .bio-container {
+        flex-direction: row;
+        padding: 120px;
+    }
+
+    .biotext-container {
+        width: 48%;
+
+    }
+
+    .bio-image-container {
+        width: 48%;
+    }
+
+    .profile-picture {
+        width: 100%;
+        display: flex;
+    }
+
+}
