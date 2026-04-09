@@ -1,26 +1,20 @@
-.h2-title-container {
+/*App*/
+.app-container {
+
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 128px;
     align-items: center;
-    text-align: center;
-    width: 100%;
-    padding: 1rem 0 3rem 0;
 }
 
-/* Shared section spacing */
-.bio-container,
-.skills-container,
-.featured-container,
-.tech-container,
-.contact-container {
-    padding: 2rem 0.5rem;
-}
 
 /* Bio */
 .bio-container {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    align-items: center;
+    width: 100%;
 }
 
 .biotext-container,
@@ -33,7 +27,11 @@
 }
 
 .biotext-container {
-    padding: 0 0.6rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 3rem;
+    gap: 64px;
 }
 
 .biotext-container *,
@@ -44,6 +42,18 @@
     word-break: break-word;
 }
 
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.bio-information-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .profile-image-wrapper {
     width: 100%;
     display: flex;
@@ -53,9 +63,10 @@
 
 .profile-picture {
     display: block;
-    width: 100%;
-    margin: 0;
+    width: calc(100% + 40px);
+    margin-left: -5px;
 }
+
 
 /* Social Links */
 .social-links {
@@ -63,12 +74,11 @@
     flex-direction: row;
     width: 100%;
     gap: 32px;
-    height: 64px;
     align-items: end;
 }
 
 .social-links img {
-    width: 21px;
+    width: 32px;
     aspect-ratio: 1 / 1;
 }
 
@@ -79,18 +89,26 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 900px;
     margin: 0 auto;
+    gap: 64px;
+}
+
+/* Skills + Featured shared section layout */
+.h2-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 
 /*Skills */
 
 .skill-section {
     position: relative;
-    padding: 0.5rem 0;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -98,7 +116,7 @@
     content: "";
     display: block;
     width: 100%;
-    margin: 0.3rem auto 0;
+    margin: 0.3rem auto 2rem auto;
     border-bottom: 2px solid var(--accent-color);
 }
 
@@ -107,7 +125,7 @@
     flex-direction: column;
     align-items: center;
     list-style: none;
-    padding: 0 10px;
+    padding: 0;
     margin: 0;
     font-size: 18px;
     font-weight: 400;
@@ -115,6 +133,7 @@
 }
 
 /* Featured Projects */
+/*sideways scrolling*/
 .cards-scroll {
     width: 100%;
     overflow-x: auto;
@@ -122,38 +141,41 @@
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     -ms-overflow-style: none;
-    /* IE/Edge */
+    /* remove scrollbar IE/Edge */
     scrollbar-width: none;
-    /* Firefox */
+    /* remove scrollbar Firefox */
 }
 
 
 .cards-scroll::-webkit-scrollbar {
     display: none;
-    /* Chrome, Safari */
+    /* remove scrollbar Chrome, Safari */
 }
 
 .cards-track {
     display: flex;
     gap: 1rem;
-    padding-bottom: 1rem;
+    padding-left: 24px;
+    padding-right: 24px;
     flex-direction: row;
     align-items: stretch;
+
 }
 
 .project-card {
     display: flex;
     flex: 0 0 85%;
     flex-direction: column;
-    padding: 0.5rem;
     background: var(--bg-color);
     scroll-snap-align: start;
+    gap: 16px;
 }
 
 .project-content {
     display: flex;
     flex-direction: column;
     flex: 1;
+    gap: 32px;
 }
 
 .project-image-wrapper {
@@ -163,7 +185,7 @@
 
 .project-image {
     width: 100%;
-    aspect-ratio: 6 / 7;
+    aspect-ratio: 7 / 8;
     object-fit: cover;
     object-position: center;
     display: block;
@@ -177,15 +199,15 @@
     display: flex;
     flex-direction: column;
     margin-top: auto;
+    gap: 16px;
 }
 
 .project-buttons a {
     text-decoration: none;
-    padding: 0.6rem 0.5rem;
 }
 
 .project-buttons button {
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 15px;
     width: 100%;
     font-size: 18px;
@@ -195,7 +217,7 @@
 .demo {
     background: var(--accent-color);
     color: var(--accent-soft);
-    border: none;
+    border: 2px solid var(--accent-color);
 }
 
 .view-code {
@@ -206,9 +228,10 @@
 
 /* Tech */
 .tech-container {
-    padding: 2rem 0.5rem;
     display: flex;
     flex-direction: column;
+    gap: 64px;
+    align-items: center;
 }
 
 .tech-text {
@@ -218,61 +241,61 @@
 .tech-text p {
     font-size: 24px;
     font-weight: 500;
-    margin: 1rem 0 2rem 0;
+    margin: 0;
 }
 
-/* Contact */
+/*Contact*/
 .contact-container {
-    padding-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 
-.info-section {
-    padding: 0 0.5rem;
+.contact-text-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding-bottom: 128px;
+}
+
+
+.contact-info {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .contact-information p {
     margin: 0;
-    padding: 0;
+    padding-bottom: 0;
     font-size: 24px;
     font-weight: 500;
+    line-height: 36px;
 }
 
 .h2-contact {
     width: 100%;
-    padding: 2rem 0 3rem 0;
 }
 
-/* Tablet: 668px - 1023px portrait */
-@media screen and (min-width: 668px) and (max-width: 1023px) and (orientation: portrait) {
+.h2-contact h2 {
+    line-height: 100px;
+}
 
-    /*shared featured and tech section*/
-    .h2-title-container {
-        padding: 1rem 0 1rem 0;
-    }
+.contact-social-links {
+    padding-bottom: 128px;
+    width: 90%;
+}
 
+/* Tablet: 668px - 1279px portrait */
+@media screen and (min-width: 668px) and (max-width: 1279px) and (orientation: portrait) {
 
     /*Bio*/
-    .h2-title-container h2,
-    .h2-contact h2 {
-        font-size: 60px;
-    }
-
-
     .profile-picture {
         width: 60vw;
-    }
-
-
-    /*Social Links*/
-    .social-links img {
-        width: 23px;
-    }
-
-
-    /*skills*/
-    .skill-section {
-        gap: 0.5rem;
     }
 
 
@@ -282,13 +305,18 @@
     }
 
 
-    .project-description {
-        display: block;
+    .project-card {
+        gap: 24px;
+        flex: 0 0 60%;
+    }
+
+    .project-content {
+        gap: 16px;
     }
 
 
-    .cards-scroll {
-        padding-top: 1rem;
+    .project-description {
+        display: block;
     }
 
 
@@ -297,17 +325,64 @@
     }
 
 
+    .project-image {
+        aspect-ratio: 6 / 5;
+    }
+
+
+    /*Contact*/
+    .contact-container .profile-image-wrapper img {
+        width: 60vw;
+    }
+
+
+    .contact-info {
+        padding: 0;
+        width: 90%;
+    }
+
+
+    .social-links img {
+        width: 32px;
+    }
+
+}
+
+
+@media screen and (min-width: 668px) and (max-width: 1279px) and (orientation: landscape) {
+
+    /*Bio*/
+    .profile-picture {
+        width: 60vw;
+    }
+
+
+    /*Featured Projects*/
+    .featured-container {
+        padding-bottom: 0;
+    }
+
     .project-card {
+        gap: 24px;
         flex: 0 0 60%;
     }
 
 
-    .project-image {
-        width: 100%;
-        aspect-ratio: 6 / 5;
-        object-fit: cover;
-        object-position: center;
+    .project-description {
         display: block;
+    }
+
+    .cards-track {
+        gap: 3rem;
+    }
+
+
+    .project-image {
+        aspect-ratio: 6 / 5;
+    }
+
+    .project-content {
+        gap: 16px;
     }
 
 
@@ -324,160 +399,154 @@
 
 
     .contact-info {
-        padding: 0 2rem 0 2rem;
+        width: 90%;
     }
-
 }
 
 
-@media screen and (min-width: 668px) and (max-width: 1366px) and (orientation: landscape) {
-
-    /*shared featured and tech section*/
-    .h2-title-container {
-        padding: 1rem 0 1rem 0;
-    }
-
+/* Desktop: 1280px and larger */
+@media screen and (min-width: 1280px) {
 
     /*Bio*/
-    .h2-title-container h2,
-    .h2-contact h2 {
-        font-size: 60px;
-    }
-
-    .bio-container {
-        flex-direction: column;
-    }
-
-
-    .profile-picture {
-        width: 60vw;
-    }
-
-
-    /*Social Links*/
-    .social-links img {
-        width: 23px;
-    }
-
-
-    /*skills*/
-    .skill-section {
-        gap: 0.5rem;
-    }
-
-
-    /*Featured Projects*/
-    .featured-container {
-        padding-bottom: 0;
-    }
-
-
-    .project-description {
-        display: block;
-    }
-
-
-    .cards-scroll {
-        padding-top: 1rem;
-    }
-
-
-    .cards-track {
-        gap: 3rem;
-    }
-
-
-    .project-card {
-        flex: 0 0 60%;
-    }
-
-
-    .project-image {
-        width: 100%;
-        aspect-ratio: 6 / 5;
-        object-fit: cover;
-        object-position: center;
-        display: block;
-    }
-
-
-    /*Tech*/
-    .tech-container {
-        align-items: center;
-    }
-
-
-    /*Contact*/
-    .contact-container .profile-image-wrapper img {
-        width: 45vw;
-    }
-
-
-    .contact-info {
-        padding: 0 2rem 0 2rem;
-    }
-
-
-
-
-}
-
-
-/* Desktop: 1024px and larger */
-@media screen and (min-width: 1024px) and (hover: hover) and (pointer: fine) {
-
     .bio-container {
         flex-direction: row;
-        padding: 120px;
+        width: 80%;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 5rem;
+        align-items: stretch;
     }
+
 
     .biotext-container {
         width: 48%;
         max-width: 50%;
+        padding: 0;
     }
 
+
     .bio-image-container {
+        display: flex;
         width: 48%;
         max-width: 50%;
+        align-items: stretch;
+    }
+
+
+    .profile-image-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+
+
+
+    .bio-description {
+        padding-bottom: 50px;
+    }
+
+
+    .profile-image-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
     }
 
     .profile-picture {
-        width: 100%;
+        max-height: 100%;
+        max-width: 85%;
+        object-fit: contain;
     }
 
-    .skills-container {
-        gap: 0;
+    /*Skills*/
+    .skill-lists {
+        display: flex;
+        flex-direction: row;
     }
+
 
     .skill-section {
         flex: 1;
         padding: 0 2rem;
-        flex-direction: row;
+        flex-direction: column;
+        white-space: nowrap;
     }
+
 
     .skill-section:not(:last-child)::after {
-        content: "";
-        position: absolute;
-        top: 10%;
-        right: 0;
-        width: 2px;
-        height: 80%;
-        margin: 0;
         border-bottom: none;
-        background-color: var(--orange-color);
+        content: none;
     }
 
-    .project-card {
-        flex: 0 0 70%;
+
+    .skill-section:not(:last-child) {
+        border-right: 2px solid var(--accent-color);
     }
+
+
+    /*Featured Projects*/
+    .featured-container {
+        padding: 64x 0;
+        gap: 64px;
+    }
+
+
+    .cards-track {
+        gap: 3rem;
+    }
+
+
+    .project-card {
+        flex: 0 0 30%;
+        gap: 24px;
+    }
+
+    .project-content {
+        gap: 16px;
+    }
+
 
     .project-description {
         display: block;
+        margin-bottom: 20px;
     }
+
 
     .project-buttons {
         flex-direction: row;
+        width: 100%;
+        gap: 16px;
     }
+
+
+    .project-buttons a {
+        flex: 1;
+        display: flex;
+        padding: 0;
+    }
+
+
+    .project-buttons button {
+        width: 100%;
+        padding: 0 16px;
+        height: 48px;
+    }
+
+
+    /*Tech*/
+    .tech-container {
+        width: 55%;
+    }
+
+    .tech-text p {
+        font-size: 30px;
+    }
+
 
     /*Contact*/
     .contact-container {
@@ -486,20 +555,37 @@
         align-items: center;
     }
 
+
     .contact-container .profile-image-wrapper {
-        width: 50%;
+        width: 48%;
+        max-width: 50%;
+        height: stretch;
+        align-items: start;
     }
+
 
     .contact-container .profile-image-wrapper img {
-        width: 30vw;
+        width: 40vw;
     }
 
-    .contact-info {
-        width: 50%;
+    .contact-text-wrapper {
+        width: 48%;
+        max-width: 50%;
     }
+
 
     .h2-contact {
-        padding: 2rem 0 1rem 0;
+        padding: 2rem 0 3rem 0;
+    }
+
+    .info-section {
+        padding: 0.4rem;
+    }
+
+    .contact-information p {
+        font-size: 30px;
+        line-height: 100%;
+        font-weight: 500;
     }
 
 }

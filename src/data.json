@@ -12,6 +12,19 @@
       "github": "https://github.com/LindaOl/business-site-linda?tab=readme-ov-file"
     },
     {
+      "name": "Weather app built in JavaScript, using API",
+      "image": "/images/weather-app-img.jpg",
+      "description": "Using API this page fetches weather data. The user can interact by searching, getting forecast for the next few days and marking  favorite.",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "APIs"
+      ],
+      "netlify": "https://weather-app-technigo-linda.netlify.app/",
+      "github": "https://github.com/LindaOl/linda-project-weather-app"
+    },
+    {
       "name": "Book library built in React",
       "image": "/images/book-library.jpg",
       "description": "A Book library that shows a list of book previews. It has common functionality like a searchbar, filters and sorting options, and by interacting with a preview you get more information on the book, or get sent to a web store.",
@@ -58,19 +71,6 @@
       ],
       "netlify": "https://lindas-recipes.netlify.app/",
       "github": "https://github.com/LindaOl/lindas-technigo-library"
-    },
-    {
-      "name": "Weather app built in JavaScript, using API",
-      "image": "/images/weather-app-img.jpg",
-      "description": "Using API this page fetches weather data. The user can interact by searching, getting forecast for the next few days and marking  favorite.",
-      "tags": [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "APIs"
-      ],
-      "netlify": "https://weather-app-technigo-linda.netlify.app/",
-      "github": "https://github.com/LindaOl/linda-project-weather-app"
     }
   ]
 }

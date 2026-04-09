@@ -10,10 +10,11 @@ export const Skills = () => {
                 <h2>Skills</h2>
             </div>
 
-            <Code />
-            <Toolbox />
+            <article className="skill-lists">
+                <Code />
+                <Toolbox />
 
-
+            </article>
 
         </section>
     )
