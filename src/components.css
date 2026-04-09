@@ -109,8 +109,9 @@
     list-style: none;
     padding: 0 10px;
     margin: 0;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
+    line-height: 32px;
 }
 
 /* Featured Projects */
@@ -120,6 +121,16 @@
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    /* IE/Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+.cards-scroll::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
 }
 
 .cards-track {
@@ -158,6 +169,10 @@
     display: block;
 }
 
+.project-description {
+    display: none;
+}
+
 .project-buttons {
     display: flex;
     flex-direction: column;
@@ -192,6 +207,8 @@
 /* Tech */
 .tech-container {
     padding: 2rem 0.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .tech-text {
@@ -205,6 +222,11 @@
 }
 
 /* Contact */
+.contact-container {
+    padding-bottom: 130px;
+}
+
+
 .info-section {
     padding: 0 0.5rem;
 }
@@ -223,13 +245,187 @@
 
 /* Tablet: 668px - 1023px portrait */
 @media screen and (min-width: 668px) and (max-width: 1023px) and (orientation: portrait) {
-    .profile-picture {
-        width: 55vw;
+
+    /*shared featured and tech section*/
+    .h2-title-container {
+        padding: 1rem 0 1rem 0;
     }
+
+
+    /*Bio*/
+    .h2-title-container h2,
+    .h2-contact h2 {
+        font-size: 60px;
+    }
+
+
+    .profile-picture {
+        width: 60vw;
+    }
+
+
+    /*Social Links*/
+    .social-links img {
+        width: 23px;
+    }
+
+
+    /*skills*/
+    .skill-section {
+        gap: 0.5rem;
+    }
+
+
+    /*Featured Projects*/
+    .featured-container {
+        padding-bottom: 0;
+    }
+
+
+    .project-description {
+        display: block;
+    }
+
+
+    .cards-scroll {
+        padding-top: 1rem;
+    }
+
+
+    .cards-track {
+        gap: 3rem;
+    }
+
+
+    .project-card {
+        flex: 0 0 60%;
+    }
+
+
+    .project-image {
+        width: 100%;
+        aspect-ratio: 6 / 5;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
+
+    /*Tech*/
+    .tech-container {
+        align-items: center;
+    }
+
+
+    /*Contact*/
+    .contact-container .profile-image-wrapper img {
+        width: 45vw;
+    }
+
+
+    .contact-info {
+        padding: 0 2rem 0 2rem;
+    }
+
 }
 
+
+@media screen and (min-width: 668px) and (max-width: 1366px) and (orientation: landscape) {
+
+    /*shared featured and tech section*/
+    .h2-title-container {
+        padding: 1rem 0 1rem 0;
+    }
+
+
+    /*Bio*/
+    .h2-title-container h2,
+    .h2-contact h2 {
+        font-size: 60px;
+    }
+
+    .bio-container {
+        flex-direction: column;
+    }
+
+
+    .profile-picture {
+        width: 60vw;
+    }
+
+
+    /*Social Links*/
+    .social-links img {
+        width: 23px;
+    }
+
+
+    /*skills*/
+    .skill-section {
+        gap: 0.5rem;
+    }
+
+
+    /*Featured Projects*/
+    .featured-container {
+        padding-bottom: 0;
+    }
+
+
+    .project-description {
+        display: block;
+    }
+
+
+    .cards-scroll {
+        padding-top: 1rem;
+    }
+
+
+    .cards-track {
+        gap: 3rem;
+    }
+
+
+    .project-card {
+        flex: 0 0 60%;
+    }
+
+
+    .project-image {
+        width: 100%;
+        aspect-ratio: 6 / 5;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
+
+    /*Tech*/
+    .tech-container {
+        align-items: center;
+    }
+
+
+    /*Contact*/
+    .contact-container .profile-image-wrapper img {
+        width: 45vw;
+    }
+
+
+    .contact-info {
+        padding: 0 2rem 0 2rem;
+    }
+
+
+
+
+}
+
+
 /* Desktop: 1024px and larger */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+
     .bio-container {
         flex-direction: row;
         padding: 120px;
@@ -237,10 +433,12 @@
 
     .biotext-container {
         width: 48%;
+        max-width: 50%;
     }
 
     .bio-image-container {
         width: 48%;
+        max-width: 50%;
     }
 
     .profile-picture {
@@ -280,4 +478,28 @@
     .project-buttons {
         flex-direction: row;
     }
+
+    /*Contact*/
+    .contact-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contact-container .profile-image-wrapper {
+        width: 50%;
+    }
+
+    .contact-container .profile-image-wrapper img {
+        width: 30vw;
+    }
+
+    .contact-info {
+        width: 50%;
+    }
+
+    .h2-contact {
+        padding: 2rem 0 1rem 0;
+    }
+
 }

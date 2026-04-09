@@ -14,16 +14,17 @@ export const Contact = () => {
                 alt="Profile picture"
             />
 
-            <div className="h2-contact">
-                <h2>Let's Talk</h2>
-            </div>
+            <div className="contact-info">
+                <div className="h2-contact">
+                    <h2>Let's Talk</h2>
+                </div>
 
-            <div>
-                <ContactInformation text={profile.name} />
-                <ContactInformation text={profile.email} />
-                <SocialLinks />
+                <div>
+                    <ContactInformation text={profile.name} />
+                    <ContactInformation text={profile.email} />
+                    <SocialLinks />
+                </div>
             </div>
-
 
         </section>
     )
