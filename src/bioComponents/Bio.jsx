@@ -1,22 +1,24 @@
-import { BioImage } from "./BioImage";
+import { ProfileImage } from "../components/ProfileImage";
 import { BioText } from "./BioText";
-import { BioDescription } from "./BioDescription";
 import { SocialLinks } from "../components/SocialLinks";
+
 
 export const Bio = () => {
     return (
 
-        <div className="bio-container">
-            <div className="biotext-container">
+        <section className="bio-container">
+            <article className="biotext-container">
                 <BioText />
-                <BioDescription />
                 <SocialLinks />
-            </div>
+            </article>
 
-            <div className="bio-image-container">
-                <BioImage />
-            </div>
+            <article className="bio-image-container">
+                <ProfileImage
+                    src="/images/profile-noBG.png"
+                    alt="Profile picture"
+                />
+            </article>
 
-        </div>
+        </section>
     )
 }

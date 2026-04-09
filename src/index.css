@@ -10,16 +10,31 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
+  --bg-color: #F3F0FF;
+  --surface-color: #FFFFFF;
+  --text-color: #1E1B2E;
+  --muted-text: #5C5673;
+  --accent-color: #6D4AFF;
+  --accent-soft: #e7e2ff;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  font-size: 24px;
+
+  overflow-x: hidden;
+
 }
 
 
@@ -29,7 +44,7 @@ p {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  margin: 0;
+  margin: 32px 0 0 0;
 }
 
 
@@ -49,7 +64,7 @@ h2 {
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
-  margin: 0;
+  margin: 0 0 0 0;
 }
 
 
@@ -61,14 +76,23 @@ h3 {
   line-height: 36px;
   margin: 10px 0 10px 0;
 
-
 }
 
 
 
 
 /*Media query for tablet, 668px - 1023px*/
-@media screen and (min-width: 668px) and (max-width: 1023px) and (orientation: landscape) {}
+@media screen and (min-width: 668px) and (max-width: 1023px) and (orientation: portrait) {
+  h1 {
+    font-size: 56px;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 44px;
+    line-height: 1.1;
+  }
+}
 
 
 /*Media query for desktop, 1024px and larger*/

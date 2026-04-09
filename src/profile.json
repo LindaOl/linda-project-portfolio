@@ -1,10 +1,39 @@
 {
     "profile": {
         "name": "Linda Olsson",
+        "title": "Frontend Developer",
         "email": "email@email.email",
         "github": "https://github.com/LindaOl",
         "instagram": "http://instagram.com/lindaelol",
         "linkedin": "https://www.linkedin.com/in/linda-olsson-a41901322/",
-        "description": "Linda is currently studying web development through Technigo's Bootcamp. She has through these bootcamp studied HTML, CSS, Javascript and worked with API's and React."
+        "description": "Linda is currently studying web development through Technigo's Bootcamp. She has through this bootcamp learned HTML, CSS, Javascript and worked with API's and React.",
+        "code": [
+            "HTML5",
+            "CSS3",
+            "JavaScript ES6",
+            "React",
+            "Styled Components"
+        ],
+        "toolbox": [
+            "VS Code",
+            "Slack",
+            "Git",
+            "GitHub",
+            "Chrome DevTools",
+            "Figma",
+            "Photoshop"
+        ],
+        "tech": [
+            "HMTL",
+            "CSS",
+            "Flexbox",
+            "Grid",
+            "JavaScript",
+            "ES6",
+            "JSX",
+            "React Hooks",
+            "API's",
+            "GitHub"
+        ]
     }
 }

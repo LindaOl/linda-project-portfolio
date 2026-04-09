@@ -1,9 +1,15 @@
+import profileData from "../profile.json";
+import { BioDescription } from "./BioDescription";
 
 export const BioText = () => {
+    const profile = profileData.profile;
+
     return (
         <div className="bio-information-container">
-            <h3>I am Linda Olsson</h3>
-            <h2>Frontend Developer</h2>
+            <h3>I am {profile.name}</h3>
+            <h2>{profile.title}</h2>
+
+            <BioDescription description={profile.description} />
         </div>
-    )
-}
+    );
+};
