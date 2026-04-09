@@ -144,22 +144,22 @@
     /* remove scrollbar IE/Edge */
     scrollbar-width: none;
     /* remove scrollbar Firefox */
+    padding-inline: 24px;
+    scroll-padding-inline: 24px;
 }
-
 
 .cards-scroll::-webkit-scrollbar {
     display: none;
     /* remove scrollbar Chrome, Safari */
+
 }
+
 
 .cards-track {
     display: flex;
     gap: 1rem;
-    padding-left: 24px;
-    padding-right: 24px;
     flex-direction: row;
     align-items: stretch;
-
 }
 
 .project-card {
@@ -446,7 +446,7 @@
     .profile-picture {
         display: block;
         max-width: 100%;
-        max-height: 600px;
+        max-height: 650px;
         width: auto;
         height: auto;
     }
@@ -485,10 +485,15 @@
 
     /*Featured Projects*/
     .featured-container {
-        padding: 64x 0;
+        padding: 64px 0;
         gap: 64px;
     }
 
+
+    .cards-scroll {
+        padding-inline: 48px;
+        scroll-padding-inline: 48px;
+    }
 
     .cards-track {
         gap: 3rem;
