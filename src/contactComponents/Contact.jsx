@@ -24,8 +24,8 @@ export const Contact = () => {
 
                     <div className="contact-mail-link">
                         <ContactInformation text={profile.name} />
-                        <a href="mailto:olsson.linda.el@gmail.com">
-                            <ContactInformation text={profile.email} />
+                        <a href={profile.email}>
+                            <ContactInformation text="Email me!" />
                         </a>
                     </div>
 
@@ -39,6 +39,6 @@ export const Contact = () => {
 
             </article>
 
-        </footer>
+        </footer >
     );
 };
