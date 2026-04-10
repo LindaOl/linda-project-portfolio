@@ -22,9 +22,11 @@ export const Contact = () => {
                         <h2>Let's Talk</h2>
                     </div>
 
-                    <div>
+                    <div className="contact-mail-link">
                         <ContactInformation text={profile.name} />
-                        <ContactInformation text={profile.email} />
+                        <a href="mailto:olsson.linda.el@gmail.com">
+                            <ContactInformation text={profile.email} />
+                        </a>
                     </div>
 
                 </div>

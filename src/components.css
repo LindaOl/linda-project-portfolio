@@ -365,6 +365,16 @@
     width: 90%;
 }
 
+.contact-mail-link a {
+    color: var(--text-color);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.contact-mail-link a:hover {
+    color: var(--accent-color);
+}
+
 
 
 /*Desktop 1024-1279*/
