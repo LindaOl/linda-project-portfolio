@@ -7,7 +7,7 @@ export const Contact = () => {
     const profile = profileData.profile;
     return (
 
-        <section className="contact-container">
+        <footer className="contact-container">
 
             <ProfileImage
                 src="/images/ama-nobg.png"
@@ -31,6 +31,6 @@ export const Contact = () => {
                 </div>
             </article>
 
-        </section>
+        </footer>
     )
 }
