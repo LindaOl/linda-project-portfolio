@@ -64,7 +64,7 @@ h2 {
   font-weight: 700;
   font-size: 60px;
   line-height: 100%;
-  margin: 0 0 0 0;
+  margin: 0;
 }
 
 
@@ -73,9 +73,8 @@ h3 {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 100%;
-  margin: 0;
   line-height: 36px;
+  margin: 0;
 }
 
 
@@ -95,36 +94,29 @@ button {
     font-size: 80px;
     line-height: 100px;
   }
+}
 
-
-  h2 {
-    font-size: 60px;
-    line-height: 100%;
+@media screen and (min-width: 668px) and (max-width: 1023px) and (orientation: landscape) {
+  h1 {
+    font-size: 100px;
   }
 
 
-  h3 {
-    font-size: 24px;
-    line-height: 36px;
+  h2 {
+    line-height: 72px;
   }
 }
 
-@media screen and (min-width: 668px) and (max-width: 1279px) and (orientation: landscape) {
+
+/* Desktop: 1024px and larger */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
   h1 {
-    font-size: 100px;
-    line-height: 100%;
+    font-size: 80px;
   }
 
 
   h2 {
-    font-size: 60px;
     line-height: 72px;
-  }
-
-
-  h3 {
-    font-size: 24px;
-    line-height: 36px;
   }
 }
 
@@ -133,7 +125,6 @@ button {
 @media screen and (min-width: 1280px) {
   h1 {
     font-size: 100px;
-
   }
 
 
