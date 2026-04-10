@@ -1,4 +1,4 @@
-import profileData from "../../profile.json";
+import profileData from "../profile.json";
 
 export const Tech = () => {
     const tech = profileData.profile.tech;

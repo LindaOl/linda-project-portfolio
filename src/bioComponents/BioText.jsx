@@ -1,4 +1,3 @@
-
 import profileData from "../profile.json";
 
 import { BioDescription } from "./BioDescription";
