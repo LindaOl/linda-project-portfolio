@@ -212,6 +212,16 @@
     display: block;
 }
 
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+
+.tags button {
+    font-size: 16px;
+}
 
 .project-description {
     display: none;
@@ -247,7 +257,8 @@
 }
 
 
-.view-code {
+.view-code,
+.tags button {
     background: var(--accent-soft);
     color: var(--accent-color);
     border: 2px solid var(--accent-color);
