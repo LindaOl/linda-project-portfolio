@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 :root {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -11,7 +12,6 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 
   --bg-color: #F3F0FF;
   --surface-color: #FFFFFF;
@@ -78,6 +78,7 @@ h3 {
   line-height: 36px;
 }
 
+
 button {
   font-family: 'Poppins';
 }
@@ -95,17 +96,17 @@ button {
     line-height: 100px;
   }
 
+
   h2 {
     font-size: 60px;
     line-height: 100%;
   }
 
+
   h3 {
     font-size: 24px;
     line-height: 36px;
   }
-
-
 }
 
 @media screen and (min-width: 668px) and (max-width: 1279px) and (orientation: landscape) {
@@ -114,28 +115,27 @@ button {
     line-height: 100%;
   }
 
+
   h2 {
     font-size: 60px;
     line-height: 72px;
   }
 
+
   h3 {
     font-size: 24px;
     line-height: 36px;
   }
-
-
-
 }
 
 
 /* Desktop: 1280px and larger */
 @media screen and (min-width: 1280px) {
-
   h1 {
     font-size: 100px;
 
   }
+
 
   h2 {
     font-size: 80px;
@@ -147,6 +147,4 @@ button {
     font-size: 30px;
     line-height: 45px;
   }
-
-
 }

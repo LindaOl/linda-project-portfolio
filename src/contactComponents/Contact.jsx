@@ -13,8 +13,11 @@ export const Contact = () => {
                 src="/images/ama-nobg.png"
                 alt="Profile picture"
             />
+
             <article className="contact-text-wrapper">
+
                 <div className="contact-info">
+
                     <div className="h2-contact">
                         <h2>Let's Talk</h2>
                     </div>
@@ -22,15 +25,18 @@ export const Contact = () => {
                     <div>
                         <ContactInformation text={profile.name} />
                         <ContactInformation text={profile.email} />
-
                     </div>
 
                 </div>
+
                 <div className="contact-social-links">
+
                     <SocialLinks />
+
                 </div>
+
             </article>
 
         </footer>
-    )
-}
+    );
+};

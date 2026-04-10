@@ -7,7 +7,10 @@ export const Bio = () => {
     return (
 
         <section className="bio-container">
-            <article className="biotext-container">
+
+            <article
+                className="biotext-container"
+            >
                 <BioText />
                 <SocialLinks />
             </article>
@@ -20,5 +23,5 @@ export const Bio = () => {
             </article>
 
         </section>
-    )
-}
+    );
+};

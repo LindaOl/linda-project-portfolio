@@ -5,12 +5,14 @@ export const Code = () => {
 
     return (
         <article className="skill-section">
+
             <h3>Code</h3>
             <ul>
                 {code.map((code) => (
                     <li key={code}>{code}</li>
                 ))}
             </ul>
+
         </article>
     );
 };

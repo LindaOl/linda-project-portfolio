@@ -4,7 +4,6 @@ import { ProjectCard } from "./ProjectCard";
 export const Projects = ({ data }) => {
     const scrollRef = useRef(null);
 
-
     const scrollRight = () => {
         const el = scrollRef.current;
         if (!el) return;
@@ -49,6 +48,7 @@ export const Projects = ({ data }) => {
 
     return (
         <div className="projects-carousel">
+
             <button
                 type="button"
                 className="carousel-button carousel-button-left"
@@ -58,7 +58,10 @@ export const Projects = ({ data }) => {
                 ‹
             </button>
 
-            <div className="cards-scroll" ref={scrollRef}>
+            <div
+                className="cards-scroll"
+                ref={scrollRef}
+            >
                 <div className="cards-track">
                     {data.projects.map((project) => (
                         <ProjectCard key={project.name} data={project} />

@@ -5,12 +5,14 @@ export const Toolbox = () => {
 
     return (
         <article className="skill-section">
+
             <h3>Toolbox</h3>
             <ul>
                 {toolbox.map((tool) => (
                     <li key={tool}>{tool}</li>
                 ))}
             </ul>
+
         </article>
     );
 };

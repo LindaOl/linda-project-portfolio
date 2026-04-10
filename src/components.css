@@ -83,10 +83,12 @@
     align-items: end;
 }
 
+
 .social-links svg {
     width: 32px;
     height: 32px;
 }
+
 
 .social-links a {
     color: var(--accent-color)
@@ -116,7 +118,6 @@
 
 
 /*Skills */
-
 .skill-section {
     position: relative;
     display: flex;
@@ -212,6 +213,7 @@
     display: block;
 }
 
+
 .tags {
     display: flex;
     flex-direction: row;
@@ -222,6 +224,7 @@
 .tags button {
     font-size: 16px;
 }
+
 
 .project-description {
     display: none;
@@ -321,15 +324,18 @@
     align-items: center;
 }
 
+
 .tech-text {
     text-align: center;
 }
+
 
 .tech-text p {
     font-size: 24px;
     font-weight: 500;
     margin: 0;
 }
+
 
 /*Contact*/
 .contact-container {
@@ -356,6 +362,7 @@
     gap: 32px;
 }
 
+
 .contact-information p {
     margin: 0;
     padding-bottom: 0;
@@ -364,18 +371,22 @@
     line-height: 36px;
 }
 
+
 .h2-contact {
     width: 100%;
 }
+
 
 .h2-contact h2 {
     line-height: 100px;
 }
 
+
 .contact-social-links {
     padding-bottom: 128px;
     width: 90%;
 }
+
 
 /* Tablet: 668px - 1279px portrait */
 @media screen and (min-width: 668px) and (max-width: 1279px) and (orientation: portrait) {
@@ -396,6 +407,7 @@
         gap: 24px;
         flex: 0 0 60%;
     }
+
 
     .project-content {
         gap: 16px;
@@ -432,6 +444,7 @@
 }
 
 
+/* Tablet, landscape*/
 @media screen and (min-width: 668px) and (max-width: 1279px) and (orientation: landscape) {
 
     /*Bio*/
@@ -445,6 +458,7 @@
         padding-bottom: 0;
     }
 
+
     .project-card {
         gap: 24px;
         flex: 0 0 60%;
@@ -455,6 +469,7 @@
         display: block;
     }
 
+
     .cards-track {
         gap: 3rem;
     }
@@ -463,6 +478,7 @@
     .project-image {
         aspect-ratio: 6 / 5;
     }
+
 
     .project-content {
         gap: 16px;
@@ -638,9 +654,11 @@
         width: 55%;
     }
 
+
     .tech-text p {
         font-size: 30px;
     }
+
 
     /*Carousel buttons*/
     .projects-carousel {
@@ -679,6 +697,7 @@
         overflow: hidden;
     }
 
+
     .contact-text-wrapper {
         width: 48%;
         max-width: 50%;
@@ -690,9 +709,11 @@
         padding: 2rem 0 3rem 0;
     }
 
+
     .info-section {
         padding: 0.4rem;
     }
+
 
     .contact-information p {
         font-size: 30px;
@@ -704,5 +725,13 @@
     .contact-social-links {
         padding: 0;
     }
+}
 
+
+/* Desktop: 1600px and larger */
+@media screen and (min-width: 1600px) {
+    .bio-container {
+        max-width: 1400px;
+        gap: 24px;
+    }
 }
