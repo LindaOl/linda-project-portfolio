@@ -83,10 +83,13 @@
     align-items: end;
 }
 
-
-.social-links img {
+.social-links svg {
     width: 32px;
-    aspect-ratio: 1 / 1;
+    height: 32px;
+}
+
+.social-links a {
+    color: var(--accent-color)
 }
 
 
@@ -414,10 +417,6 @@
         width: 90%;
     }
 
-
-    .social-links img {
-        width: 32px;
-    }
 
 }
 
