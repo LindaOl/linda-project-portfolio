@@ -731,7 +731,7 @@
 /* Desktop: 1600px and larger */
 @media screen and (min-width: 1600px) {
     .bio-container {
-        max-width: 1400px;
+        max-width: 1500px;
         gap: 24px;
     }
 }
