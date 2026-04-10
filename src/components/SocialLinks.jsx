@@ -11,9 +11,11 @@ export const SocialLinks = () => {
                 href="https://www.linkedin.com/in/linda-olsson-a41901322/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit my LinkedIn profile (opens in a new tab)"
             >
                 <motion.svg
                     viewBox="0 0 32 32"
+                    aria-hidden="true"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     whileHover={{ scale: 1.15, y: -4 }}
@@ -31,9 +33,11 @@ export const SocialLinks = () => {
                 href="https://github.com/LindaOl"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit my Github (opens in a new tab)"
             >
                 <motion.svg
                     viewBox="0 0 32 32"
+                    aria-hidden="true"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     whileHover={{ scale: 1.15, y: -4 }}
@@ -51,9 +55,11 @@ export const SocialLinks = () => {
                 href="http://instagram.com/lindaelol"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit my Instagram profile (opens in a new tab)"
             >
                 <motion.svg
                     viewBox="0 0 32 32"
+                    aria-hidden="true"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     whileHover={{ scale: 1.15, y: -4 }}
