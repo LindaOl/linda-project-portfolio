@@ -734,4 +734,9 @@
         max-width: 1500px;
         gap: 24px;
     }
+
+
+    .profile-image-wrapper {
+        justify-content: end;
+    }
 }
