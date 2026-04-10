@@ -64,13 +64,13 @@
     display: flex;
     justify-content: center;
     margin-top: 5px;
+    overflow: hidden;
 }
 
 
 .profile-picture {
     display: block;
-    width: calc(100% + 40px);
-    margin-left: -5px;
+    width: calc(100% + 30px);
 }
 
 
