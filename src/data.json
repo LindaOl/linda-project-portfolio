@@ -71,6 +71,19 @@
       ],
       "netlify": "https://lindas-recipes.netlify.app/",
       "github": "https://github.com/LindaOl/lindas-technigo-library"
+    },
+    {
+      "name": "Survey page in React",
+      "image": "/images/fitness-survey.jpg",
+      "description": "Here you can see an example of a survey form made in React.",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React"
+      ],
+      "netlify": "https://fitness-survey.netlify.app/",
+      "github": "https://github.com/LindaOl/linda-project-quiz"
     }
   ]
 }
